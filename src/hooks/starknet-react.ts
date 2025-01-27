@@ -47,7 +47,7 @@ export const useAccountDetails = (): {
   })
 
   const chainId = useMemo(() => {
-    if (!connectedChainId || !connectedChainId.data) return undefined
+    if (!connectedChainId || !connectedChainId.data) return ChainId.MAINNET
     return connectedChainId.data
   }, [connectedChainId, address])
 
