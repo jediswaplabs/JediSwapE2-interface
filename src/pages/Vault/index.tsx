@@ -792,8 +792,7 @@ export function VaultElement({
       withdrawTypedValue,
       new Token(DEFAULT_CHAIN_ID, '', 18)
     )
-    const defaultWithdrawSlippage = new Percent(10, 100)
-
+    const defaultWithdrawSlippage = new Percent(1, 100)
     const vaultFee = new Percent(fee_config, 1000000)
 
     const amount0_min = calculateMinimumAmountWithSlippage(token0, defaultWithdrawSlippage)
